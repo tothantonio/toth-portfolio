@@ -48,8 +48,6 @@ export default function Footer() {
             target="_blank"
             href="https://github.com/tothantonio/toth-portfolio"
           >
-            <ArrowIcon />
-            <p className="ml-2 h-7">view source</p>
           </a>
         </li>
       </ul>
@@ -61,6 +59,8 @@ export default function Footer() {
       </p>
       <p className="mt-8 text-neutral-600 dark:text-neutral-300">
         Website built using Next.js and Tailwind CSS
+        <ArrowIcon />
+            <p className="ml-2 h-7">view source</p>
       </p>
     </footer>
   )
