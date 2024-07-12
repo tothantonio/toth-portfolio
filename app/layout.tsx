@@ -34,8 +34,8 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: '/5537993.png',
-    shortcut: '/5537993.png',
+    icon: '/favicon.ico',
+    apple: '/favicon/apple-touch-icon.png',
   },
 }
 
@@ -56,8 +56,8 @@ export default function RootLayout({
       )}
     >
       <head>
-        <link rel = "icon" href = "/5537993.png" sizes = "any"/>
-        <link rel = "shortcut icon" href = "/5537993.png" sizes = "any"/>
+        <link rel = "icon" href = "/favicon.ico"/>
+        <link rel = "apple" href = "/favicon/apple-touch-icon.png"/>
       </head>
       <body className="antialiased max-w-xl mx-4 mt-8 lg:mx-auto">
         <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
