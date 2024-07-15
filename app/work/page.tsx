@@ -1,7 +1,13 @@
-import React from 'react';
 
-const work = () => (
-    <div>work page</div>
-);
+export const metadata = {
+    title: 'Work',
+    description: 'Watch my work.',
+  }
 
-export default work;
+  export default function Page() {
+    return (
+      <section>
+        <h1 className="font-semibold text-2xl mb-8 tracking-tighter">My work</h1>
+      </section>
+    )
+  }
