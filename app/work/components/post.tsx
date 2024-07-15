@@ -12,7 +12,7 @@ export function WorkPosts() {
             new Date(a.metadata.publishedAt) > new Date(b.metadata.publishedAt)
           ) {
             return -1
-          }
+          }4
           return 1
         })
         .map((post) => (
