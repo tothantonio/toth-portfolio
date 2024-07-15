@@ -1,3 +1,4 @@
+import { WorkPosts } from 'app/work/components/post'
 
 export const metadata = {
     title: 'Work',
@@ -8,6 +9,7 @@ export const metadata = {
     return (
       <section>
         <h1 className="font-semibold text-2xl mb-8 tracking-tighter">My work</h1>
+        <WorkPosts />
       </section>
     )
   }
