@@ -57,7 +57,7 @@ export default function Footer() {
         © {new Date().getFullYear()} MIT Licensed
       </p>
       <p className="mt-8 text-neutral-600 dark:text-neutral-300">
-        www.toth.me v.2024.03
+        tothantonio v.2024.03
       </p>
       <p className="mt-8 text-neutral-600 dark:text-neutral-300">
         Website built using Next.js and Tailwind CSS
