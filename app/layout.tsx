@@ -7,6 +7,7 @@ import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import Footer from './components/footer'
 import { baseUrl } from './sitemap'
+import { useEffect, useState } from 'react'
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
@@ -46,6 +47,23 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+    const [theme, setTheme] = useState('light')
+
+    useEffect(() => {
+        const savedTheme = localStorage.getItem('theme')
+        if (savedTheme) {
+            setTheme(savedTheme)
+            document.documentElement.setAttribute('data-theme', savedTheme)
+        }
+    }, [])
+
+    const toggleTheme = () => {
+        const newTheme = theme === 'light' ? 'dark' : 'light'
+        setTheme(newTheme)
+        document.documentElement.setAttribute('data-theme', newTheme)
+        localStorage.setItem('theme', newTheme)
+    }
+
   return (
     <html
       lang="en"
@@ -58,6 +76,9 @@ export default function RootLayout({
       <body className="antialiased max-w-xl mx-4 mt-8 lg:mx-auto">
         <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
           <Navbar />
+          <button onClick={toggleTheme} className="mb-4">
+            Switch to {theme === 'light' ? 'dark' : 'light'} mode
+          </button>
           {children}
           <Footer />
           <Analytics />
