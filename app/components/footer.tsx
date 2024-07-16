@@ -52,12 +52,23 @@ export default function Footer() {
             <p className="ml-2 h-7">resume</p>
           </a>
         </li>
+        <li>
+          <a
+            className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://x.com/itunaic"
+          >
+            <ArrowIcon />
+            <p className="ml-2 h-7">itunaic</p>
+          </a>
+        </li>
       </ul>
       <p className="mt-8 text-neutral-600 dark:text-neutral-300">
-        © {new Date().getFullYear()} MIT Licensed
+        © {new Date().getFullYear()} All rights reserved.
       </p>
       <p className="mt-8 text-neutral-600 dark:text-neutral-300">
-        tothantonio v.2024.03
+        tothantonio v.2024.01
       </p>
       <p className="mt-8 text-neutral-600 dark:text-neutral-300">
         Website built using Next.js and Tailwind CSS
