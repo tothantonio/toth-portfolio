@@ -35,9 +35,12 @@ export const metadata: Metadata = {
   },
   icons: {
     icon : [
-      '/favicon.ico',
+      '/favicon.ico?v=4',
     ],
     apple: [
+      '/apple-touch-icon.png?v=4',
+    ],
+    shortcut: [
       '/apple-touch-icon.png',
     ]
   },
@@ -59,10 +62,6 @@ export default function RootLayout({
         GeistMono.variable
       )}
     >
-      <head>
-        <link rel = "icon" href = "/favicon.ico"/>
-        <link rel = "apple" href = "/favicon/apple-touch-icon.png"/>
-      </head>
       <body className="antialiased max-w-xl mx-4 mt-8 lg:mx-auto">
         <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
           <Navbar />
