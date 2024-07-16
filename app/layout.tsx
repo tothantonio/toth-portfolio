@@ -34,8 +34,15 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: '/favicon.ico',
-    apple: '/favicon/apple-touch-icon.png',
+    icon : [
+      '/favicon.ico',
+    ],
+    android: [
+      '/android-chrome-192x192.png',
+    ],
+    apple: [
+      '/apple-touch-icon.png',
+    ]
   },
 }
 
@@ -57,6 +64,7 @@ export default function RootLayout({
     >
       <head>
         <link rel = "icon" href = "/favicon.ico"/>
+        <link rel = "android" href = "/favicon/android-chrome-192x192.png"/>
         <link rel = "apple" href = "/favicon/apple-touch-icon.png"/>
       </head>
       <body className="antialiased max-w-xl mx-4 mt-8 lg:mx-auto">

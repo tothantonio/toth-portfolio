@@ -68,10 +68,10 @@ export default function Footer() {
         © {new Date().getFullYear()} All rights reserved.
       </p>
       <p className="mt-8 text-neutral-600 dark:text-neutral-300">
-        tothantonio v.2024.01
+        www.atoth.me v.2024.01
       </p>
       <p className="mt-8 text-neutral-600 dark:text-neutral-300">
-        Website built using Next.js and Tailwind CSS
+        Website built using Next.js and TailwindCSS
         <a
             className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
             rel="noopener noreferrer"
