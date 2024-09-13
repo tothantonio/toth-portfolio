@@ -12,7 +12,7 @@ export default function Page() {
       <p className="mb-4">
         {`I'm a passionate engineering student with a keen interest in web and mobile development. 
       I thrive on solving complex problems and creating innovative solutions. Check out `}
-        <a href="https://www.atoth.me/work" className="hover:text-neutral-800 dark:hover:text-neutral-100">my work</a>
+        <a href="https://www.atoth.me/work" className="text-neutral-800 underline">my work</a>
         {` if you want to know me better. Currently studying 
       Computer Science at TUCN.  
       Let's build something amazing together!😊🚀
