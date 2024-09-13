@@ -11,12 +11,11 @@ export default function Page() {
       </h3>
       <p className="mb-4">
         {`I'm a passionate engineering student with a keen interest in web and mobile development. 
-      I thrive on solving complex problems and creating innovative solutions. Check out `}
-        <a href="https://www.atoth.me/work" className="text-neutral-800 underline">my work</a>
-        {` if you want to know me better. Currently studying 
+      I thrive on solving complex problems and creating innovative solutions. Currently studying 
       Computer Science at TUCN.  
       Let's build something amazing together!😊🚀
-      `}
+      if you want to know me better, check out `}
+       <a href="https://www.atoth.me/work" className="text-neutral-100 underline">my work</a>
       </p>
       <div className="my-8">
         <BlogPosts />
