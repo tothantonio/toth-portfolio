@@ -14,6 +14,7 @@ export default function Page() {
       I thrive on solving complex problems and creating innovative solutions. Currently studying 
       Computer Science at TUCN.  
       Let's build something amazing together!😊🚀
+      
       if you want to know me better, check out `}
        <a href="https://www.atoth.me/work" className="text-neutral-100 underline">my work</a>
       </p>
