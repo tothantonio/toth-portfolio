@@ -11,8 +11,8 @@ export default function Page() {
       </h3>
       <p className="mb-4">
         {`I'm a passionate engineering student with a keen interest in web and mobile development. 
-      I thrive on solving complex problems and creating innovative solutions. `}
-        <a href="/my-work" className="text-blue-500 underline">my work</a>
+      I thrive on solving complex problems and creating innovative solutions. Check out `}
+        <a href="/my-work" className="text-gray-300 underline">my work</a>
         {` if you want to know me better. Currently studying 
       Computer Science at TUCN.  
       Let's build something amazing together!😊🚀
