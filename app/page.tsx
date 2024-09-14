@@ -16,11 +16,10 @@ export default function Page() {
       Let's build something amazing together!😊🚀
       `}
       </p>
-      
-      <p className="mb-4">
+      <span className="mb-4">
           {'If you want to know me better, check out '}
           <a href="https://www.atoth.me/work" className="text-neutral-100 underline">my work</a>
-      </p>
+      </span>
       <div className="my-8">
         <BlogPosts />
       </div>
