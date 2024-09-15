@@ -18,7 +18,7 @@ export default function Page() {
       </p>
       <span className="mb-4">
           {'If you want to know me better, check out '}
-          <a href="https://www.atoth.me/work" className="text-neutral-100 underline">my work</a>
+          <a href="https://www.atoth.me/work" className="mb-4 underline dark:text-neutral-100 underline">my work</a>
       </span>
       <div className="my-8">
         <BlogPosts />
