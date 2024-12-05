@@ -1,0 +1,95 @@
+---
+title: 'BFS vs DFS'
+publishedAt: '2024-12-05'
+---
+
+# BFS vs DFS: Understanding Graph Traversal Algorithms
+
+![Bfs_vs_Dfs](https://hellokoding.com/content/images/2020/03/Screenshot-2020-03-31-at-11-30-58-PM.png)
+
+Currently I've been studying a lot of algorithms, so I decided to come with a blog post where I try to explain you 2 main algorithms that anyone need to know, and which are very nice to master.😁
+
+Graph traversal algorithms are fundamental in computer science, and two of the most commonly used algorithms are Breadth-First Search (BFS) and Depth-First Search (DFS). In this post, we'll explore the differences between BFS and DFS, their use cases, and provide implementations in JavaScript.
+
+## What is BFS?
+
+*Breadth-First Search* (BFS) is an algorithm for traversing or searching tree or graph data structures. It starts at the root node and explores all the neighbor nodes at the present depth prior to moving on to nodes at the next depth level.
+
+```
+function bfs(graph, startNode) {
+  let visited = new Set(); // set to keep track of visited nodes
+  let queue = [startNode]; // a queue to manage the nodes to be explored
+  while (queue.length > 0) { 
+    // continue until we have no nodes to explore
+    let node = queue.shift(); // dequeue the first node in queue
+    if (!visited.has(node)) { // if the node has not been visited
+      visited.add(node); // visit it
+      console.log(node); // print the node
+      queue.push(...graph[node].filter(n => !visited.has(n))); 
+      // enqueue all unvisited neighbors
+    }
+  }
+}
+```
+
+## What is DFS?
+
+*Depth-First Search* (DFS) is an algorithm for traversing or searching tree or graph data structures. It starts at the root node and explores as far as possible along each branch before backtracking.
+
+```
+function dfs(graph, startNode, visited = new Set()) {
+  if (visited.has(startNode)) return; 
+  // if the note was visited, return
+  visited.add(startNode); // mark the node as visited
+  console.log(startNode); // print the node
+
+  for (let neighbor of graph[startNode]) { 
+    // iterate through each neighbor
+    dfs(graph, neighbor, visited); 
+    // recursively apply DFS to each neighbor
+  }
+}
+```
+
+## What are the differences between BFS and DFS?
+
+- Order of Traversal:
+    
+    __BFS__ explores nodes level by level, while __DFS__ explores as far as possible along each branch before backtracking
+
+- Data Structures Used:
+
+    __BFS__ uses a queue, while __DFS__ uses a stack (or recursion).
+
+- Use Cases:
+    
+    __BFS__  is often used for finding the shortest path in unweighted graphs, while __DFS__ is used for topological sorting, cycle detection, and solving puzzles with only one solution.
+
+## Advantages and Disadvantages:
+
+**BFS**:
+
+- *Advantages*:
+    - Finds the shortest path in unweighted graphs.
+    - Explores all nodes at the present depth level before moving on to the next level.
+
+- *Disadvantages*:
+    - Requires more memory compared to DFS.
+    - Can be slower for deep graphs.
+
+**DFS**:
+
+- *Advantages*:
+    - Requires less memory compared to BFS.
+    - Can be faster for deep graphs.
+
+- *Disadvantages*:
+    - Can get stuck in deep graphs without a solution.
+    - Does not guarantee the shortest path.
+
+I also made my own, *pathfinding-visualizer project*, to play a bit with these algorithms. 
+
+I implemented algorithms for **maze generation** and also for **pathfinding**.
+If you want to take a look, it will be available soon, and you can check out the source code on my [Github](https://github.com/tothantonio/pathfinding-visualizer). 
+
+![Pathfinding Visualizer](https://github.com/tothantonio/pathfinding-visualizer/raw/main/screenshot.png)
