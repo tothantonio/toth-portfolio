@@ -39,7 +39,7 @@ function bfs(graph, startNode) {
 ```
 function dfs(graph, startNode, visited = new Set()) {
   if (visited.has(startNode)) return; 
-  // if the note was visited, return
+  // if the node was visited, return
   visited.add(startNode); // mark the node as visited
   console.log(startNode); // print the node
 
