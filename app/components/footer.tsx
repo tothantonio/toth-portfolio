@@ -65,7 +65,7 @@ export default function Footer() {
         </li>
       </ul>
       <p className="mt-8 text-neutral-600 dark:text-neutral-300">
-        © {new Date().getFullYear()} All rights reserved.
+        © 2024 - {new Date().getFullYear()} All rights reserved.
       </p>
       <p className="mt-8 text-neutral-600 dark:text-neutral-300">
         www.atoth.me v.2024.01
