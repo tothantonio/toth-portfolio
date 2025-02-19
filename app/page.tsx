@@ -10,7 +10,7 @@ export default function Page() {
         Software engineer. Growing ideas, building futures🌱✨
       </h3>
       <p className="mb-4">
-        {`I'm a passionate engineering student with a keen interest in web and mobile development. 
+        {`I'm a passionate engineering student, committed to continuous learning, upgrading technical and soft skills, and exploring new technologies.
       I thrive on solving complex problems and creating innovative solutions. Currently studying 
       Computer Science at TUCN.  
       Let's build something amazing together!😊🚀
