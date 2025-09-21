@@ -46,17 +46,6 @@ export default function Footer() {
             className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
             rel="noopener noreferrer"
             target="_blank"
-            //href="https://docs.google.com/document/d/1I4t6pakxcb5ReFQzdeNPA3_uFe01W-nF3W9T09GL3P0/edit#heading=h.fk0meevqned9"
-          >
-            <ArrowIcon />
-            <p className="ml-2 h-7">resume</p>
-          </a>
-        </li>
-        <li>
-          <a
-            className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
-            rel="noopener noreferrer"
-            target="_blank"
             href="https://x.com/itunaic"
           >
             <ArrowIcon />
@@ -78,7 +67,7 @@ export default function Footer() {
             target="_blank"
             href="https://github.com/tothantonio/toth-portfolio"
           >
-            <ArrowIcon /> <p className="ml-2 h-7">view source</p>
+            <ArrowIcon /> <span className="ml-2 h-7">view source</span>
           </a>
       </p>
     </footer>
