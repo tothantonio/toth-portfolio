@@ -15,11 +15,12 @@ export function BlogPosts() {
           }
           return 1
         })
-        .map((post) => (
+        .map((post, index) => (
           <Link
             key={post.slug}
-            className="flex flex-col space-y-1 mb-4"
+            className="flex flex-col space-y-1 mb-4 animate-slide-up transition-all hover:translate-x-1 hover:opacity-80"
             href={`/blog/${post.slug}`}
+            style={{ animationDelay: `${0.4 + index * 0.1}s`, opacity: 0 }}
           >
             <div className="w-full flex flex-col md:flex-row space-x-0 md:space-x-2">
               <p className="text-neutral-600 dark:text-neutral-400 w-[100px] tabular-nums">

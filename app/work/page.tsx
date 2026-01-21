@@ -7,8 +7,8 @@ export const metadata = {
 
   export default function Page() {
     return (
-      <section>
-        <h1 className="font-semibold text-2xl mb-8 tracking-tighter">My work</h1>
+      <section className="animate-fade-in">
+        <h1 className="font-semibold text-2xl mb-8 tracking-tighter animate-slide-up">My work</h1>
         <WorkPosts />
       </section>
     )
