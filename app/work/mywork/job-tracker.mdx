@@ -1,0 +1,90 @@
+---
+title: 'Job Tracker'
+publishedAt: '2026-07-08'
+---
+
+# Job Tracker: Full-Stack Job Application Management
+
+Managing job applications can be overwhelming. **Job Tracker** is a modern, full-stack application that helps you stay organized, track your progress, and visualize your job search journey.
+
+## 🎯 What it does
+
+A complete job application management system where you can:
+- **Register & Login** with secure authentication
+- **Add, Edit, and Delete** job applications with ease
+- **Dashboard Analytics** - see your progress at a glance with statistics
+- **Real-time Sync** between frontend and backend
+- **Clean, Modern UI** - built for a smooth user experience
+
+![Job Tracker Dashboard](https://raw.githubusercontent.com/tothantonio/jobtracker/refs/heads/main/img/image.png)
+
+![Job Tracker Application Management](https://raw.githubusercontent.com/tothantonio/jobtracker/refs/heads/main/img/image2.png)
+
+## 💻 Tech Stack
+
+### Backend
+Built with **Java 25** and **Spring Boot 4.1.0** - a powerful, scalable REST API
+
+- Spring Web MVC for HTTP handling
+- Spring Data JPA for database operations
+- PostgreSQL for persistent data storage
+- Maven for dependency management
+- Comprehensive error handling & validation
+
+### Frontend
+Built with **React 19** and **Vite** - fast, modern, and responsive
+
+- React Router DOM for navigation
+- Axios for API communication
+- Custom CSS for beautiful UI
+- Cypress for end-to-end testing
+
+## 🏗️ Architecture
+
+A clean, layered architecture that separates concerns:
+
+```
+Frontend (React + Vite)
+         ↓ (REST API)
+Backend (Spring Boot)
+         ↓ (JPA)
+Database (PostgreSQL)
+```
+
+**Backend Structure:**
+- Controllers → Services → Repositories → Entities
+- DTOs for clean data transfer
+- Mappers for entity transformations
+- Centralized exception handling
+
+**Frontend Structure:**
+- Pages for different views
+- Reusable components
+- Service layer for API calls
+- Main layout with shared navigation
+
+## 🚀 Key Features
+
+✨ **User Authentication** - Secure registration and login
+
+📊 **Dashboard Statistics** - Overview of your job search
+
+🔄 **Full CRUD Operations** - Create, read, update, and delete applications
+
+🐳 **Docker Support** - Fully containerized with Docker Compose
+
+✅ **Testing** - Backend unit tests and frontend E2E tests
+
+🔗 **CI/CD Pipeline** - GitHub Actions automation
+
+## 🎬 See it in action
+
+Watch the demo to see how smoothly everything works:
+
+[![Job Tracker Demo](https://raw.githubusercontent.com/tothantonio/jobtracker/refs/heads/main/img/video.gif)](https://github.com/tothantonio/jobtracker)
+
+## 🔗 Links
+
+[Live Demo](https://jobtracker-theta-gold.vercel.app/login)
+
+[Source code](https://github.com/tothantonio/jobtracker)
