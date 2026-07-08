@@ -1,0 +1,112 @@
+---
+title: 'Heart Failure Analysis'
+publishedAt: '2026-07-08'
+---
+
+# Heart Failure Analysis Project
+
+A data-driven project that uses machine learning and AI to analyze heart failure data. The goal is to build models that reveal patterns in the dataset and help explain which factors contribute most to heart failure risk.
+
+## What this project does
+
+- Uses **supervised learning** to train predictive models on labeled health data.
+- Applies **neural networks** to capture complex relationships in the features.
+- Includes **data preprocessing**, **training**, **validation**, and **visualization** steps.
+- Saves the model weights and biases to `.npy` files for later reuse.
+
+## Key concepts
+
+### 1. Supervised Learning
+
+The project trains models on labeled heart failure data, letting the model learn how input features relate to the outcome.
+
+### 2. Neural Networks
+
+Neural networks are used to model non-linear patterns and interactions between medical features.
+
+### 3. Data Preprocessing
+
+Important preprocessing steps include:
+
+- handling missing values
+- normalizing numeric features
+- splitting the dataset into training and validation sets
+
+### 4. Model Evaluation
+
+Model performance is measured with standard metrics like:
+
+- accuracy
+- precision
+- recall
+- F1-score
+
+### 5. Ethical AI
+
+The project emphasizes responsible AI by:
+
+- respecting data privacy
+- avoiding biased predictions
+- noting that this is not a medical diagnosis tool
+
+## Project structure
+
+```text
+PyCharmMiscProject/
+├── analiza_insuficiena_cardiaca.ipynb  # Jupyter Notebook for analysis
+├── heart.csv                          # Dataset
+├── model/                             # Directory for model weights
+│   ├── best_train_b.npy
+│   ├── best_train_w_in.npy
+│   ├── best_valid_b.npy
+│   ├── best_valid_w_in.npy
+├── .gitignore                         # Git ignore file
+```
+
+## How to run
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/tothantonio/heart-failure-analysis.git
+cd heart-failure-analysis
+```
+
+2. Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+3. Open the notebook:
+
+```bash
+jupyter notebook analiza_insuficiena_cardiaca.ipynb
+```
+
+4. Follow the notebook steps to preprocess data, train the model, and evaluate results.
+
+## Requirements
+
+- Python 3.8+
+- Jupyter Notebook
+- NumPy
+- Pandas
+- Scikit-learn
+- Matplotlib
+
+## Ethical considerations
+
+- Ensure the dataset does not contain personally identifiable information.
+- Avoid using the model for medical diagnosis without consulting healthcare professionals.
+- Be transparent about model limitations.
+
+## Future work
+
+- Test new neural network architectures to improve accuracy.
+- Add support for other heart health datasets.
+- Deploy the model as a simple web application for easier access.
+
+## License
+
+This project is licensed under the MIT License. See the `LICENSE` file in the repository for details.
